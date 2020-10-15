@@ -1,0 +1,408 @@
+/* Mulai code Anda dari baris terakhir */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body,
+  ul, ol, li,
+  h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Tahoma, Verdana, sans-serif";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  /* CSS Header */
+  header {
+    background-color: white;
+    color: #17004E;
+    width: 100%;
+    height: 10vh;
+    padding-top: 15px;
+}
+
+nav {
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 14px;
+    float: right;
+    margin-right: 30px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#logo {
+    float: left;
+    margin-left: 100px;
+}
+
+#logo h1 {
+    font-family: 'minecraft_eveningsregular';
+    font-size: 3em;
+}
+
+.side-bar {
+    display: none;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: #17004E;
+}
+
+.nav-link {
+    transition: all 1s;
+    padding: 15px 25px;
+}
+
+.nav-link:hover {
+    background-color: #17004E;
+    color:white;
+}
+
+/* CSS Main Content */
+  #jumbotron {
+    width: 100%;
+    height: 645px;
+    font-family: Tahoma, Verdana, sans-serif;
+  }
+
+  .jumbotron {
+    background-image: url(../img/back-main.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 0 100px;
+  }
+
+  .jumbotron .jumbo-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 160px 0 170px 0;
+  }
+
+  .jumbotron h2 {
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .jumbotron h3 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+
+  .jumbotron p {
+    font-size: 14px;
+    font-weight: normal;
+    opacity: .7;
+  }
+
+  .jumbotron .p2 {
+    padding-bottom: 22px;
+  }
+
+  .jumbo-link {
+    margin: 22px 0;
+    
+  }
+
+  .jumbo-link a {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    padding: 11px 29px;
+    border-radius: 10px;
+    opacity: .8;
+  }
+
+  .jumbo-link p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 22px 0;
+  }
+
+  .jumbo-link .email {
+    background-color: #239b76;
+  }
+
+  .jumbo-link .fb {
+    background-color: #55acee;
+    margin-right: 20px;
+  }
+
+  .jumbo-link .vk {
+    background-color: #3b5998;
+  }
+
+  .jumbo-link a:hover {
+    opacity: 1;
+    font-size: 16px;
+    transition: all .5s;
+  }
+
+  /* CSS Content-1 */
+  .title {
+    text-align: center;
+    color:  #17004E;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.content-1 {
+    max-width: 1000px;
+    margin: 50px auto;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 370px;
+    top: 0;
+    z-index: 0;
+    border: 7px solid  #17004E;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    flex: 25%;
+}
+
+.card:hover {
+    transition: all 0.1s ease-out;
+    top: -5px;
+}
+
+.card .header {
+    height: 150px;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card, .content h4  {
+    color:  #17004E;
+    padding: 24px 0;
+}
+
+.card, .content p {
+    color: #634f92;
+} 
+
+/* CSS Content-2 */
+.content-2 {
+  background-color: #17004E;
+  text-align: center;
+  height: auto;
+}
+.content-2-title {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #17004E;
+  padding: 10px;
+  background-color: white;
+  border: 5px solid #17004E;
+
+}
+.content-2-news { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  align-items: flex-end;
+}
+.news img {
+  max-height: 170px;
+  margin: 10px 0;
+  border-radius: 10px
+}
+
+.news{
+  border: 5px solid white;
+  box-sizing: border-box;
+  height: 250px;
+  margin: 20px;
+  background-color: #17004E;
+  color: white;
+  width: 400px;
+  border-radius: 20px;
+  transition: all 0.5s;
+  transition-timing-function: ease;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+}
+.news:hover {
+  background-color: white;
+  transform: scale(1.08);
+  border: 5px solid #17004E;
+  color: #17004E;
+}
+
+.content-2-news a:link {
+  color: rgb(40, 40, 40);
+}
+.content-2-news a:visited {
+  color: rgb(40, 40, 40);
+}
+.content-2-news a:active{
+  font-weight: bolder;
+}
+
+
+/* CSS Content-3 */
+.row {
+  width: 100%;
+  height: auto;
+  background-color: white; 
+  padding: 50px 0 0 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 150px;
+}
+
+.row p {
+  opacity: .6;
+}
+
+/* Kiri */
+.kiri {
+  margin-right: 100px;
+  color: #17004E;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+.kiri h3 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 60px 0 20px;
+}
+
+.kiri p {
+  font-size: 16px;
+}
+
+/* kanan */
+
+.kanan {
+  padding-left: 100px;
+}
+
+.kontak{
+  background-color: #17004E;
+  height: 85px;
+  width: 250px;
+  color: white;
+  margin-left: 100px;
+  margin-top: 40px;  
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+.kontak h2 {
+  padding-left: 14px;
+  padding-top: 20px; 
+}
+
+
+
+.kontak a {
+  color: white;
+  font-size: 12px;
+  padding-top: 16px;
+  padding-left: 14px;
+  opacity: .6;
+}
+
+.kontak a:hover {
+  opacity: 1;
+}
+
+.kanan h2 {
+  font-size: 16px;
+}
+
+.kontak img{
+  width: 88px;
+  float: right;
+  margin-top: -24px;
+  padding-right: 8px;
+  
+}
+
+/* support */
+.support{
+  background-color: #17004E;
+  height: 85px;
+  width: 250px;
+  color: white;
+  margin-left: 100px;
+  margin-top: 40px;  
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+.support a {
+  color: white;
+  font-size: 12px;
+  padding-top: 16px;
+  padding-left: 14px;
+  opacity: .6;
+}
+
+.support a:hover {
+  opacity: 1;
+}
+
+.support h2{
+  padding-left: 14px;
+  padding-top: 20px; 
+}
+
+.support img{
+  width: 88px;
+  float: right;
+  padding-top: 13px;
+  padding-right: 8px;
+  
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  height: 100px;
+  background-color: #17004E;
+  color: white;
+}
+
+.footer h2 {
+  font-size: 35px;
+  padding-top: 18px;
+  font-family: 'minecraft_eveningsregular';
+}
+
+.footer p {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
